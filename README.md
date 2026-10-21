@@ -30,3 +30,32 @@ The programme prints the original image and the image before and after each oper
  Run the following command in the project dirctory:
 
 python3 image_processor.py
+
+# RGB Image Processing
+This project also supports RGB(Red,Green,Blue) images using pure Python.Each pixel contains three color values,with each value ranging from 0 to 255.
+
+The RGB operations are implmeneted seperately in rgb_processor.py,so the original grayscale code remains unchanged.
+
+## Invert colors:##
+invert_rgb_image(image)-
+inverts the red,green,and blue values.
+
+## Adjust Brightness
+adjust_rgb_brightness(image,amount)-increaes or decreases brightness while keeping values between 0 and 255
+
+## Threshold
+threshold_rgb_image(image,threshold)-converts pixels to black or white based on their average RGB intensity
+
+## Horizontal flip
+flip_horizontal_rgb(image)-flips the image horizontally
+
+## Rotate cloclwise
+rotate_clockwise_rgb(image)-rotates the image 90 degree clockwise
+
+## Blur
+blur_rgb_image(image)-blurs the image by averaging neighbouring color channels
+
+## Technologies used
+python 3.10+
+core python only
+No NumPy,OpenCV,or Pillows
